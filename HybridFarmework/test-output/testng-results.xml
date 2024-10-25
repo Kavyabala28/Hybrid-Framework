@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-25T20:44:13 IST" name="Default suite" finished-at="2024-10-25T20:44:41 IST" duration-ms="27469">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runCreateLead@5386659f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2024-10-25T20:44:13 IST" name="Default test" finished-at="2024-10-25T20:44:41 IST" duration-ms="27469">
+      <class name="runner.runCreateLead">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:13 IST" name="startReport" finished-at="2024-10-25T20:44:13 IST" duration-ms="612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method is-config="true" signature="sendData()[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:13 IST" name="sendData" finished-at="2024-10-25T20:44:13 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendData -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:13 IST" name="setUpClass" finished-at="2024-10-25T20:44:14 IST" duration-ms="686" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@45d4421d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method is-config="true" signature="setReport()[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:14 IST" name="setReport" finished-at="2024-10-25T20:44:14 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setReport -->
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:14 IST" name="preCondition" finished-at="2024-10-25T20:44:26 IST" duration-ms="12144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preCondition -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2024-10-25T20:44:36 IST" duration-ms="9782" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create Lead"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["LeafTab create Lead"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:36 IST" name="postCondition" finished-at="2024-10-25T20:44:39 IST" duration-ms="2558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:39 IST" name="tearDownClass" finished-at="2024-10-25T20:44:41 IST" duration-ms="1991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:runner.runCreateLead@5386659f]" started-at="2024-10-25T20:44:41 IST" name="endReport" finished-at="2024-10-25T20:44:42 IST" duration-ms="769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- runner.runCreateLead -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
