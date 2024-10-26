@@ -7,8 +7,8 @@ And Enter password
 When Click Login
 And Click crmsfa
 And Click create Lead
-Given Enter companyname <cname>
-And Enter firstname <fname>
-And Enter lastname <lname>
+Given Enter companyname Comcast
+And Enter firstname Priya
+And Enter lastname Dharshini
 When Click submit
 

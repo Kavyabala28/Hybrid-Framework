@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\welcome\AppData\Local\Temp\testng-eclipse-1973683697\testng-customsuite.xml</span>
+                    <span>C:\Users\welcome\AppData\Local\Temp\testng-eclipse--982476428\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -61,7 +61,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-Default_suite" class="navigator-link ">
-                    <span>1 group</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="runner.runCreateLead" class="method navigator-link" hash-for-method="runScenario(&quot;Create Lead&quot;, &quot;LeafTab create Lead&quot;)">runScenario("Create Lead", "LeafTab create Lead")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_002_CreateLeadPage" class="method navigator-link" hash-for-method="runCreateLeadPage(Amazon, John, Joseph)">runCreateLeadPage(Amazon, John, Joseph)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="testcases.TC_002_CreateLeadPage" class="method navigator-link" hash-for-method="runCreateLeadPage(Infosys, Kevin, Joy)">runCreateLeadPage(Infosys, Kevin, Joy)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,17 +127,23 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">runner.runCreateLead</span>
+              <span class="class-name">testcases.TC_002_CreateLeadPage</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="runScenario(&quot;Create Lead&quot;, &quot;LeafTab create Lead&quot;)">
-                  </a> <!-- runScenario("Create Lead", "LeafTab create Lead") -->
-                  <span class="method-name">runScenario</span>
-                  <span class="parameters">("Create Lead", "LeafTab create Lead")</span>
-                  <em>
-(Runs Cucumber Scenarios)                  </em>
+                  <a name="runCreateLeadPage(Amazon, John, Joseph)">
+                  </a> <!-- runCreateLeadPage(Amazon, John, Joseph) -->
+                  <span class="method-name">runCreateLeadPage</span>
+                  <span class="parameters">(Amazon, John, Joseph)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runCreateLeadPage(Infosys, Kevin, Joy)">
+                  </a> <!-- runCreateLeadPage(Infosys, Kevin, Joy) -->
+                  <span class="method-name">runCreateLeadPage</span>
+                  <span class="parameters">(Infosys, Kevin, Joy)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -140,7 +151,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\welcome\AppData\Local\Temp\testng-eclipse-1973683697\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\welcome\AppData\Local\Temp\testng-eclipse--982476428\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -149,7 +160,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;runner.runCreateLead&quot;/&gt;
+      &lt;class name=&quot;testcases.TC_002_CreateLeadPage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -173,14 +184,6 @@
             <span class="header-content">Groups for Default suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">cucumber</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">runScenario</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Default_suite" class="panel">
@@ -197,16 +200,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'runner.runCreateLead')
-data.setCell(0, 3, 9782);
+data.setCell(0, 1, 'runCreateLeadPage')
+data.setCell(0, 2, 'testcases.TC_002_CreateLeadPage')
+data.setCell(0, 3, 16544);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runCreateLeadPage')
+data.setCell(1, 2, 'testcases.TC_002_CreateLeadPage')
+data.setCell(1, 3, 15047);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -232,42 +239,54 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">runner.runCreateLead</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC_002_CreateLeadPage</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">sendData</span>
-                <span class="method-start">619 ms</span>
+                <span class="method-name">setData</span>
+                <span class="method-start">413 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@45d4421d)</span>
-                <span class="method-start">645 ms</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@3f048c86)</span>
+                <span class="method-start">429 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setReport</span>
-                <span class="method-start">1331 ms</span>
+                <span class="method-start">620 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">preCondition</span>
-                <span class="method-start">1348 ms</span>
+                <span class="method-start">1903 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">runScenario("Create Lead", "LeafTab create Lead")</span>
-                <span class="method-start">13498 ms</span>
+                <span class="method-name">runCreateLeadPage(Amazon, John, Joseph)</span>
+                <span class="method-start">17377 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">postCondition</span>
-                <span class="method-start">23531 ms</span>
+                <span class="method-start">32432 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">preCondition</span>
+                <span class="method-start">32733 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">runCreateLeadPage(Infosys, Kevin, Joy)</span>
+                <span class="method-start">42745 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">postCondition</span>
+                <span class="method-start">59293 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">26089 ms</span>
+                <span class="method-start">59785 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-suite after">
                 <span class="method-name">endReport</span>
-                <span class="method-start">28130 ms</span>
+                <span class="method-start">59887 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
