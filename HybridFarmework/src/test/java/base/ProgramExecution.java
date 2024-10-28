@@ -1,8 +1,10 @@
 package base;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.Properties;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
@@ -14,6 +16,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -23,12 +26,13 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import utils.DataLibrary;
 
-public class ProgramExecution extends AbstractTestNGCucumberTests{
+public class ProgramExecution extends AbstractTestNGCucumberTests {
 
 	private static final ThreadLocal<RemoteWebDriver> rd = new ThreadLocal<RemoteWebDriver>();
 	private static final ThreadLocal<ExtentTest> parentTest = new ThreadLocal<ExtentTest>();
 	private static final ThreadLocal<String> testName = new ThreadLocal<String>();
 	private static final ThreadLocal<ExtentTest> node = new ThreadLocal<ExtentTest>();
+	private static final ThreadLocal<Properties> prop = new ThreadLocal<Properties>();
 
 	public ExtentReports extent;
 	// public static ExtentTest node;
@@ -91,15 +95,31 @@ public class ProgramExecution extends AbstractTestNGCucumberTests{
 
 	public void reportStatus(String status, String description) throws IOException {
 		if (status.equalsIgnoreCase("pass")) {
-			getNode().pass(description, MediaEntityBuilder.createScreenCaptureFromPath(".././Snaps/img" + takeSnap() + ".png").build());
+			getNode().pass(description,
+					MediaEntityBuilder.createScreenCaptureFromPath(".././Snaps/img" + takeSnap() + ".png").build());
 		} else if (status.equalsIgnoreCase("fail")) {
-			getNode().fail(description, MediaEntityBuilder.createScreenCaptureFromPath(".././Snaps/img" + takeSnap() + ".png").build());
+			getNode().fail(description,
+					MediaEntityBuilder.createScreenCaptureFromPath(".././Snaps/img" + takeSnap() + ".png").build());
 		}
 	}
 
+	public Properties getProp() {
+		return prop.get();
+	}
+
+	public void setProp() {
+		prop.set(new Properties());
+	}
+
+	@Parameters({"propName"})
 	@BeforeMethod
-	public void preCondition() {
+	public void preCondition(String propName) throws IOException {
 		setNode();
+		setProp();
+		
+		FileInputStream fis = new FileInputStream("src/main/resources/" + propName + ".properties");
+		getProp().load(fis);
+
 		setDriver();
 		getDriver().get("http://leaftaps.com/opentaps/");
 		getDriver().manage().window().maximize();

@@ -2,6 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="classes" verbose="5">
   <test name="Test">
+	<parameter name="propName" value="Credential2" />
     <classes>
       <class name="testcases.TC_002_CreateLeadPage"/>
       <class name="runner.runCreateLead"/>
